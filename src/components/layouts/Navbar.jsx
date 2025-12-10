@@ -1,4 +1,4 @@
-import logo from "../../assets/ecommclips-light.png";
+import logo from "../../assets/ecommclips-light.webp";
 
 export default function Navbar() {
   const menuOptions = [
