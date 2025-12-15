@@ -2,7 +2,7 @@ import logo from "../../assets/ecommclips-dark.webp";
 
 export default function Footer() {
   return (
-    <section className="absolute bg-slate-100 p-8 md:px-20 w-full bottom-0">
+    <section className=" bg-slate-100 p-8 md:px-20 w-full ">
       <footer className="font-semibold transition-colors duration-300">
         <div className="flex flex-col border-b-2 border-slate-500/50 pb-10 md:flex-row justify-center items-start gap-10 md:gap-16 mb-10">
           <a className="rounded-2xl" href="https://plataforma.ecommclips.com">
@@ -14,7 +14,7 @@ export default function Footer() {
             />
           </a>
           <div className="flex flex-row gap-3 md:flex-col md:border-r-2 md:border-slate-500/50 md:pr-16">
-            <a className="hover:text-sky-600" href="">
+            <a className="hover:text-sky-600" href="#inicio">
               Início
             </a>
             <a className="hover:text-sky-600" href="">

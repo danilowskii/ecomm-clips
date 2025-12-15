@@ -1,0 +1,48 @@
+import RotatingText from "../ui/RotatingText";
+
+export default function Hero() {
+  return (
+    <section
+      id="inicio"
+      className="pt-24  z-0 bg-black h-[75dvh] w-screen overflow-hidden relative"
+    >
+      <div className="z-0">
+        <div className=" absolute left-0 bottom-0 filter rounded-full blur-[50px] md:blur-[80px] h-40 w-40 md:h-64 md:w-64 bg-sky-600/30"></div>
+      </div>
+
+      <div className="z-10 flex p-10 flex-col md:flex-row justify-center gap-20 items-center h-full ">
+        <div className="text-slate-50 max-w-lg font-semibold text-4xl md:text-7xl">
+          <h1 className="">
+            crie{" "}
+            <span className="font-bold bg-gradient-to-r from-sky-700 to-sky-500 bg-clip-text text-transparent">
+              clipes
+            </span>
+            <br /> que{" "}
+            <span>
+              <RotatingText
+                texts={["vendem", "convertem", "atraem", "destacam"]}
+                mainClassName="text-slate-50 font-bold overflow-hidden rounded-lg"
+                staggerFrom={"last"}
+                initial={{ y: "100%" }}
+                animate={{ y: 0 }}
+                exit={{ y: "-120%" }}
+                staggerDuration={0.025}
+                splitLevelClassName="overflow-hidden "
+                transition={{ type: "spring", damping: 30, stiffness: 400 }}
+                rotationInterval={2500}
+              />
+            </span>
+          </h1>
+          <h3 className="text-xl py-6">
+            Transforme fotos em vídeos profissionais com IA, prontos para
+            anúncios e marketplaces
+          </h3>
+          <button className="text-lg md:text-2xl font-medium transition-all duration-300 ease-in-out hover:shadow-[0px_0px_10px_#048dd6] text-slate-50 bg-gradient-to-tr from-sky-700 to-sky-500 px-6 py-4 rounded-xl ">
+            Criar clipe agora
+          </button>
+        </div>
+        <div className="h-full w-full md:w-1/4 border-2 border-white"></div>
+      </div>
+    </section>
+  );
+}
