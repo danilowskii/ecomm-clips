@@ -1,4 +1,5 @@
 import RotatingText from "../ui/RotatingText";
+import videoHero from "../../assets/videoHero.webm";
 
 export default function Hero() {
   return (
@@ -41,7 +42,16 @@ export default function Hero() {
             Gerar vídeo agora
           </button>
         </div>
-        <div className="h-full w-full md:w-1/4 border-2 border-white"></div>
+        <div className="relative ">
+          <video
+            src={videoHero}
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-96 h-[300px] md:h-[600px] z-10 object-cover"
+          ></video>
+        </div>
       </div>
     </section>
   );

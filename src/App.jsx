@@ -4,6 +4,7 @@ import Hero from "./components/sections/Hero";
 import About from "./components/sections/About";
 import Benefits from "./components/sections/Benefits";
 import Plans from "./components/sections/Plans";
+import Data from "./components/sections/Data";
 
 export default function App() {
   return (
@@ -13,7 +14,9 @@ export default function App() {
       <div className="flex flex-col">
         <Hero />
         <Benefits />
+        <Data />
         <About />
+
         <Plans />
       </div>
 

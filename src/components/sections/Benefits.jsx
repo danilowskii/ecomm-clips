@@ -30,7 +30,7 @@ export default function Benefits() {
       id="conheca"
       className="w-full overflow-hidden font-semibold bg-slate-50 p-6 md:p-12 lg:p-18 flex flex-col justify-center items-center"
     >
-      <div className="w-full max-w-7xl flex justify-center items-center flex-col mb-8">
+      <div className="w-full max-w-7xl flex justify-center items-center flex-col md:mb-8">
         <div className="flex flex-row gap-2 items-center md:text-lg bg-slate-200 text-slate-900 py-2 px-6 rounded-full shadow-sm">
           <Users size={24} />
           <span>para quem é</span>
@@ -54,7 +54,7 @@ export default function Benefits() {
         {benefits.map((item) => (
           <div
             key={item.id}
-            className="group relative z-10 bg-white  p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:border-sky-500 transition-all duration-300 flex flex-row items-center gap-6"
+            className="group relative z-10 bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:border-sky-500 transition-all duration-300 flex flex-row items-center gap-6"
           >
             <div className="w-0 h-0 transition-all duration-300 group-hover:w-full group-hover:h-full rounded-2xl -z-0 absolute bottom-0 left-1/2 -translate-x-1/2 bg-sky-100"></div>
             <div className="flex-shrink-0 w-14 z-10 h-14 rounded-full bg-slate-50 border-2 border-slate-100 flex items-center justify-center text-sky-600 group-hover:bg-sky-50 group-hover:border-sky-100 transition-colors duration-300">
