@@ -14,7 +14,7 @@ export default function Hero() {
         <div className="text-slate-50 max-w-lg font-semibold text-4xl md:text-7xl">
           <h1 className="">
             crie{" "}
-            <span className="font-bold bg-gradient-to-r from-sky-700 to-sky-500 bg-clip-text text-transparent">
+            <span className="font-bold bg-gradient-to-r from-sky-400 to-sky-600 bg-clip-text text-transparent">
               clipes
             </span>
             <br /> que{" "}
@@ -33,12 +33,12 @@ export default function Hero() {
               />
             </span>
           </h1>
-          <h3 className="text-xl py-6">
+          <h3 className="text-xl text-slate-50 py-6">
             Transforme fotos em vídeos profissionais com IA, prontos para
             anúncios e marketplaces
           </h3>
-          <button className="text-lg md:text-2xl font-medium transition-all duration-300 ease-in-out hover:shadow-[0px_0px_10px_#048dd6] text-slate-50 bg-gradient-to-tr from-sky-700 to-sky-500 px-6 py-4 rounded-xl ">
-            Criar clipe agora
+          <button className="text-lg px-10 py-4 rounded-xl font-semibold transition-all duration-200 bg-sky-600 hover:bg-sky-500 text-white shadow-lg shadow-sky-500/25 hover:shadow-sky-500/40">
+            Gerar vídeo agora
           </button>
         </div>
         <div className="h-full w-full md:w-1/4 border-2 border-white"></div>

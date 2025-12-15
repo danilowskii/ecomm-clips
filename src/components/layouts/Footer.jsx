@@ -17,10 +17,10 @@ export default function Footer() {
             <a className="hover:text-sky-600" href="#inicio">
               Início
             </a>
-            <a className="hover:text-sky-600" href="">
-              Serviços
+            <a className="hover:text-sky-600" href="#conheca">
+              Conheça
             </a>
-            <a className="hover:text-sky-600" href="">
+            <a className="hover:text-sky-600" href="#planos">
               Planos
             </a>
             <a className="hover:text-sky-600" href="">

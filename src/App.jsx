@@ -3,6 +3,7 @@ import Footer from "./components/layouts/Footer";
 import Hero from "./components/sections/Hero";
 import About from "./components/sections/About";
 import Benefits from "./components/sections/Benefits";
+import Plans from "./components/sections/Plans";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
         <Hero />
         <Benefits />
         <About />
+        <Plans />
       </div>
 
       <Footer />

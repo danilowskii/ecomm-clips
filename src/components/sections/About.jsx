@@ -28,10 +28,7 @@ export default function About() {
   ];
 
   return (
-    <section
-      id="como-usar"
-      className="w-full font-semibold bg-slate-50 p-6 md:p-12 lg:p-20 flex flex-col justify-center items-center"
-    >
+    <section className="w-full font-semibold bg-slate-50 p-6 md:p-12 lg:p-20 flex flex-col justify-center items-center">
       <div className="w-full max-w-7xl flex justify-center items-center flex-col mb-8">
         <div className="flex flex-row gap-2 items-center md:text-lg bg-slate-200 text-slate-900 py-2 px-6 rounded-full shadow-sm">
           <CircleQuestionMark size={24} />

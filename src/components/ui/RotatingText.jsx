@@ -204,7 +204,7 @@ const RotatingText = forwardRef((props, ref) => {
                       ),
                     }}
                     className={cn(
-                      "inline-block bg-gradient-to-r from-sky-700 to-sky-500 bg-clip-text text-transparent",
+                      "inline-block bg-gradient-to-r from-sky-400 to-sky-600 bg-clip-text text-transparent",
                       elementLevelClassName
                     )}
                   >

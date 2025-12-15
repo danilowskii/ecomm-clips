@@ -2,7 +2,7 @@ import logo from "../../assets/ecommclips-light.webp";
 
 export default function Navbar() {
   const menuOptions = [
-    { href: "#como-usar", label: "Conheça" },
+    { href: "#conheca", label: "Conheça" },
     { href: "#planos", label: "Planos" },
   ];
 
@@ -37,7 +37,7 @@ export default function Navbar() {
           <a
             target="_blank"
             href="https://plataforma.ecommclips.com"
-            className="self-center text-nowrap font-medium text-sm md:text-base bg-gradient-to-tr transition-all duration-300 ease-in-out hover:shadow-[0px_0px_10px_#048dd6] from-sky-700 to-sky-500 px-3 py-2 md:px-4 md:py-2 text-slate-50 rounded-xl"
+            className="self-center px-4 py-2 text-nowrap rounded-xl font-semibold transition-all duration-200 bg-sky-600 hover:bg-sky-500 text-white shadow-lg shadow-sky-500/25 hover:shadow-sky-500/40"
           >
             Iniciar Sessão
           </a>
