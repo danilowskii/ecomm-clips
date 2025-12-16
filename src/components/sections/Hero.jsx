@@ -1,17 +1,18 @@
 import RotatingText from "../ui/RotatingText";
 import videoHero from "../../assets/videoHero.webm";
+import posterVideoHero from "../../assets/posterVideoHero.webp";
 
 export default function Hero() {
   return (
     <section
       id="inicio"
-      className="pt-24  z-0 bg-black h-[75dvh] w-screen overflow-hidden relative"
+      className="pt-24 z-0 bg-black h-auto w-screen overflow-hidden relative"
     >
       <div className="z-0">
-        <div className=" absolute left-0 bottom-0 filter rounded-full blur-[50px] md:blur-[80px] h-40 w-40 md:h-64 md:w-64 bg-sky-600/30"></div>
+        <div className="hidden md:block animate-pulse absolute left-0 bottom-0 filter rounded-full blur-[50px] md:blur-[80px] h-40 w-40 md:h-64 md:w-64 bg-sky-600/30"></div>
       </div>
 
-      <div className="z-10 flex p-10 flex-col md:flex-row justify-center gap-20 items-center h-full ">
+      <div className="z-10 flex pt-10 px-10 flex-col md:flex-row justify-center gap-20 items-center h-full ">
         <div className="text-slate-50 max-w-lg font-semibold text-4xl md:text-7xl">
           <h1 className="">
             crie{" "}
@@ -30,7 +31,7 @@ export default function Hero() {
                 staggerDuration={0.025}
                 splitLevelClassName="overflow-hidden "
                 transition={{ type: "spring", damping: 30, stiffness: 400 }}
-                rotationInterval={2500}
+                rotationInterval={3000}
               />
             </span>
           </h1>
@@ -38,18 +39,19 @@ export default function Hero() {
             Transforme fotos em vídeos profissionais com IA, prontos para
             anúncios e marketplaces
           </h3>
-          <button className="text-lg px-10 py-4 rounded-xl font-semibold transition-all duration-200 bg-sky-600 hover:bg-sky-500 text-white shadow-lg shadow-sky-500/25 hover:shadow-sky-500/40">
+          <button className="text-base md:text-lg px-6 md:px-10 py-4 rounded-xl font-semibold transition-all duration-200 bg-sky-600 hover:bg-sky-500 text-white shadow-lg shadow-sky-500/25 hover:shadow-sky-500/40">
             Gerar vídeo agora
           </button>
         </div>
-        <div className="relative ">
+        <div className="relative rounded-3xl">
           <video
             src={videoHero}
+            poster={posterVideoHero}
             autoPlay
             loop
             muted
             playsInline
-            className="w-96 h-[300px] md:h-[600px] z-10 object-cover"
+            className="w-60 md:w-80 h-auto md:h-auto z-10 object-cover"
           ></video>
         </div>
       </div>

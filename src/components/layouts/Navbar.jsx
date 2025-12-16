@@ -20,7 +20,7 @@ export default function Navbar() {
             className="w-auto h-8 md:h-16 "
           />
         </a>
-        <div className="flex flex-row gap-6 md:gap-10">
+        <div className="flex flex-row gap-5 md:gap-10">
           <div className="flex flex-row justify-end gap-6 md:gap-10 items-center h-20 w-full">
             {menuOptions.map((option, index) => (
               <div key={index}>
@@ -37,7 +37,7 @@ export default function Navbar() {
           <a
             target="_blank"
             href="https://plataforma.ecommclips.com"
-            className="self-center px-4 py-2 text-nowrap rounded-xl font-semibold transition-all duration-200 bg-sky-600 hover:bg-sky-500 text-white shadow-lg shadow-sky-500/25 hover:shadow-sky-500/40"
+            className="self-center text-sm md:text-base px-4 py-2 text-nowrap rounded-xl font-semibold transition-all duration-200 bg-sky-600 hover:bg-sky-500 text-white shadow-lg shadow-sky-500/25 hover:shadow-sky-500/40"
           >
             Iniciar Sessão
           </a>

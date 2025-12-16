@@ -1,32 +1,35 @@
-import video from "../../assets/video2.webm";
-import { UserStar, TrendingUp, BrainCircuit, Smartphone } from "lucide-react";
+import video1 from "../../assets/video1.webm";
+import posterVideo1 from "../../assets/posterVideo1.webp";
+import video2 from "../../assets/video2.webm";
+import posterVideo2 from "../../assets/posterVideo2.webp";
+import video3 from "../../assets/video3.webm";
+import posterVideo3 from "../../assets/posterVideo3.webp";
+import { UserStar, TrendingUp, AudioLines, DollarSign } from "lucide-react";
 
 const benefitsData = [
   {
     title: " de Conversão",
     titleHighlight: "Aumento",
     stat: "A Ecomm Clips transforma suas fotos estáticas em vídeos dinâmicos, explorando esse potencial de venda sem que você precise filmar nada.",
-    imageSrc: video,
-    imageAlt: "Gráfico mostrando aumento de vendas",
+    videoSrc: video1,
+    videoPoster: posterVideo1,
     icon: TrendingUp,
   },
   {
     title: " da Mensagem",
     titleHighlight: "Retenção",
     stat: "Com nossa narração automática por IA e cenários realistas, seu cliente entende os benefícios do produto muito mais rápido do que lendo uma descrição longa.",
-    imageSrc:
-      "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=800",
-    imageAlt: "Ilustração abstrata de tecnologia e foco",
-    icon: BrainCircuit,
+    videoSrc: video2,
+    videoPoster: posterVideo2,
+    icon: AudioLines,
   },
   {
     title: " do Consumidor",
     titleHighlight: "Preferência",
-    stat: "Nossos vídeos são gerados automaticamente com 15 segundos — exatamente o formato curto que a maioria dos compradores nos Marketplaces e redes sociais deseja consumir.",
-    imageSrc:
-      "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=800",
-    imageAlt: "Pessoa assistindo vídeo curto no celular",
-    icon: Smartphone,
+    stat: "Nossos vídeos são gerados automaticamente com até 15 segundos — exatamente o formato curto que a maioria dos compradores nos Marketplaces e redes sociais deseja consumir.",
+    videoSrc: video3,
+    videoPoster: posterVideo3,
+    icon: DollarSign,
   },
 ];
 
@@ -34,7 +37,7 @@ export default function Data() {
   return (
     <section className=" bg-gray-50 w-screen">
       <div className="container mx-auto max-w-7xl px-4 md:px-6">
-        <div className="w-full max-w-7xl flex justify-center items-center flex-col md:mb-8">
+        <div className="w-full max-w-7xl flex justify-center items-center flex-col my-8">
           <div className="flex flex-row gap-2 font-semibold items-center md:text-lg bg-slate-200 text-slate-900 py-2 px-6 rounded-full shadow-sm">
             <UserStar size={24} />
             <span>diferencial</span>
@@ -74,8 +77,8 @@ export default function Data() {
                     loop
                     muted
                     playsInline
-                    src={item.imageSrc}
-                    alt={item.imageAlt}
+                    src={item.videoSrc}
+                    poster={item.videoPoster}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm p-3 rounded-xl shadow-sm">
