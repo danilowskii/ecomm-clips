@@ -4,6 +4,7 @@ import {
   UploadCloud,
   Video,
 } from "lucide-react";
+import ScrollReveal from "../ui/ScrollReveal";
 
 export default function About() {
   const steps = [
@@ -50,30 +51,32 @@ export default function About() {
 
         <div className="grid grid-cols-3">
           {steps.map((step, index) => (
-            <div
-              key={step.id}
-              className="relative flex flex-col items-center text-center group"
-            >
-              <div className="w-16 h-16 rounded-full bg-slate-50 border-4 border-slate-200 flex items-center justify-center text-slate-600 z-10 shadow-sm transition-all duration-300 group-hover:border-sky-500 group-hover:text-sky-500 group-hover:scale-110">
-                {step.icon}
-              </div>
+            <ScrollReveal key={index} delay={0.2} duration={0.4}>
+              <div
+                key={step.id}
+                className="relative flex flex-col items-center text-center group"
+              >
+                <div className="w-16 h-16 rounded-full bg-slate-50 border-4 border-slate-200 flex items-center justify-center text-slate-600 z-10 shadow-sm transition-all duration-300 group-hover:border-sky-500 group-hover:text-sky-500 group-hover:scale-110">
+                  {step.icon}
+                </div>
 
-              <div className="mt-6">
-                <span className="block text-sm font-bold text-slate-400 mb-1 uppercase tracking-wider">
-                  Passo {step.id}
-                </span>
-                <h3 className="text-lg font-bold text-slate-800 mb-2">
-                  {step.title}
-                </h3>
-                <p className="text-slate-500 font-normal text-sm px-4 leading-relaxed">
-                  {step.description}
-                </p>
-              </div>
+                <div className="mt-6">
+                  <span className="block text-sm font-bold text-slate-400 mb-1 uppercase tracking-wider">
+                    Passo {step.id}
+                  </span>
+                  <h3 className="text-lg font-bold text-slate-800 mb-2">
+                    {step.title}
+                  </h3>
+                  <p className="text-slate-500 font-normal text-sm px-4 leading-relaxed">
+                    {step.description}
+                  </p>
+                </div>
 
-              {index !== steps.length - 1 && (
-                <div className="md:hidden text-slate-300 my-4">↓</div>
-              )}
-            </div>
+                {index !== steps.length - 1 && (
+                  <div className="md:hidden text-slate-300 my-4">↓</div>
+                )}
+              </div>
+            </ScrollReveal>
           ))}
         </div>
       </div>

@@ -1,4 +1,10 @@
 import logo from "../../assets/ecommclips-dark.webp";
+import {
+  FaWhatsapp,
+  FaPhoneAlt,
+  FaInstagram,
+  FaRegEnvelope,
+} from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -29,16 +35,17 @@ export default function Footer() {
           </div>
           <div className="flex flex-col gap-3">
             <a className="hover:text-sky-600" href="">
-              Whatsapp
+              <FaWhatsapp className="inline w-6 h-auto" /> Whatsapp
             </a>
             <a className="hover:text-sky-600" href="">
-              Instagram
+              <FaInstagram className="inline w-6 h-auto" /> Instagram
             </a>
             <a className="hover:text-sky-600" href="">
+              <FaRegEnvelope className="inline mr-1 w-6 h-auto" />
               E-mail
             </a>
             <a className="hover:text-sky-600" href="">
-              Telefone
+              <FaPhoneAlt className="inline w-5 h-auto" /> Telefone
             </a>
           </div>
         </div>

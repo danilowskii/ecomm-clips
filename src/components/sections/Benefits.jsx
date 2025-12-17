@@ -1,5 +1,6 @@
 import { Users, TrendingUp, Sparkles, Wallet, Zap } from "lucide-react";
 import logo from "../../assets/logo.png";
+import ScrollReveal from "../ui/ScrollReveal";
 
 export default function Benefits() {
   const benefits = [
@@ -52,24 +53,28 @@ export default function Benefits() {
           <img src={logo} alt="Logo Ecomm Clips" />
         </div>
         {benefits.map((item) => (
-          <div
-            key={item.id}
-            className="group relative z-10 bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:border-sky-500 transition-all duration-300 flex flex-row items-center gap-6"
-          >
-            <div className="w-0 h-0 transition-all duration-300 group-hover:w-full group-hover:h-full rounded-2xl -z-0 absolute bottom-0 left-1/2 -translate-x-1/2 bg-sky-100"></div>
-            <div className="flex-shrink-0 w-14 z-10 h-14 rounded-full bg-slate-50 border-2 border-slate-100 flex items-center justify-center text-sky-600 group-hover:bg-sky-50 group-hover:border-sky-100 transition-colors duration-300">
-              {item.icon}
-            </div>
+          <ScrollReveal duration={0.6} delay={item.id * 0.1} key={item.id}>
+            <div
+              key={item.id}
+              className="group relative z-10 bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:border-sky-500 transition-all duration-300 flex flex-row items-center gap-6"
+            >
+              <div className="w-0 h-0 transition-all duration-300 group-hover:w-full group-hover:h-full rounded-2xl -z-0 absolute bottom-0 left-1/2 -translate-x-1/2 bg-sky-100"></div>
+              <div className="flex-shrink-0 w-14 z-10 h-14 rounded-full bg-slate-50 border-2 border-slate-100 flex items-center justify-center text-sky-600 group-hover:bg-sky-50 group-hover:border-sky-100 transition-colors duration-300">
+                {item.icon}
+              </div>
 
-            <p className="text-slate-700 z-10 font-medium text-lg leading-snug group-hover:text-slate-800 transition-colors">
-              {item.text}
-            </p>
-          </div>
+              <p className="text-slate-700 z-10 font-medium text-lg leading-snug group-hover:text-slate-800 transition-colors">
+                {item.text}
+              </p>
+            </div>
+          </ScrollReveal>
         ))}
       </div>
-      <button className="w-full md:w-fit px-20 py-4 mt-8 rounded-xl font-semibold transition-all duration-200 bg-sky-600 hover:bg-sky-500 text-white shadow-lg shadow-sky-500/25 hover:shadow-sky-500/40">
-        Gerar vídeo com IA
-      </button>
+      <ScrollReveal delay={0.2} duration={0.7}>
+        <button className="w-full md:w-fit px-20 py-4 mt-8 rounded-xl font-semibold transition-all duration-200 bg-sky-600 hover:bg-sky-500 text-white shadow-lg shadow-sky-500/25 hover:shadow-sky-500/40">
+          Gerar vídeo com IA
+        </button>
+      </ScrollReveal>
     </section>
   );
 }

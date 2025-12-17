@@ -107,15 +107,22 @@ export default function Plans() {
                 ))}
               </ul>
 
-              <button
-                className={`w-full py-4 rounded-xl font-semibold transition-all duration-200 ${
-                  plan.buttonVariant === "solid"
-                    ? "bg-sky-600 hover:bg-sky-400 text-white shadow-lg shadow-sky-500/25 hover:shadow-sky-500/40"
-                    : "bg-white text-black hover:bg-zinc-200"
-                }`}
+              <a
+                href="https://plataforma.ecommclips.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-xl"
               >
-                {plan.highlight ? "Começar Agora" : "Escolher Plano Pro"}
-              </button>
+                <button
+                  className={`w-full py-4 rounded-xl font-semibold transition-all duration-200 ${
+                    plan.buttonVariant === "solid"
+                      ? "bg-sky-600 hover:bg-sky-400 text-white shadow-lg shadow-sky-500/25 hover:shadow-sky-500/40"
+                      : "bg-white text-black hover:bg-zinc-200"
+                  }`}
+                >
+                  {plan.highlight ? "Começar Agora" : "Escolher Plano Pro"}
+                </button>
+              </a>
             </div>
           ))}
         </div>
