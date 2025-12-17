@@ -75,7 +75,6 @@ export default function Data() {
                   >
                     <video
                       autoPlay
-                      loading="lazy"
                       loop
                       muted
                       playsInline
