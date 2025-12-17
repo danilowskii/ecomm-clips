@@ -11,19 +11,19 @@ export default function About() {
     {
       id: 1,
       title: "Informações do Produto",
-      description: "Título e descrição do produto.",
+      description: "Título e descrição do produto",
       icon: <LinkIcon size={20} />,
     },
     {
       id: 2,
       title: "Upload de Imagens",
-      description: "Suba 3 imagens do produto.",
+      description: "Suba 3 imagens do produto",
       icon: <UploadCloud size={20} />,
     },
     {
       id: 3,
       title: "Geração do Vídeo",
-      description: "Clique em gerar e receba o vídeo do produto.",
+      description: "Clique e gere vídeos do seu produto",
       icon: <Video size={20} />,
     },
   ];
@@ -39,7 +39,7 @@ export default function About() {
 
       <div className="flex pb-10 font-bold">
         <h3 className="text-4xl md:text-6xl text-center">
-          crie em <br />
+          Crie em <br />
           <span className="bg-gradient-to-r from-sky-700 to-sky-500 bg-clip-text text-transparent">
             3 passos simples
           </span>
@@ -71,10 +71,6 @@ export default function About() {
                     {step.description}
                   </p>
                 </div>
-
-                {index !== steps.length - 1 && (
-                  <div className="md:hidden text-slate-300 my-4">↓</div>
-                )}
               </div>
             </ScrollReveal>
           ))}

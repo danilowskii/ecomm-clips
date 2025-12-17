@@ -41,7 +41,7 @@ export default function Benefits() {
       <div className="flex pb-12 font-bold text-center">
         <h3 className="text-4xl md:text-6xl leading-tight text-slate-800">
           <br className="md:hidden" />
-          ideal para <br />
+          Ideal para <br />
           <span className="bg-gradient-to-r from-sky-700 to-sky-500 bg-clip-text text-transparent">
             vendedores que
           </span>

@@ -15,7 +15,7 @@ export default function Hero() {
       <div className="z-10 flex pt-10 px-10 flex-col md:flex-row justify-center gap-20 items-center h-full ">
         <div className="text-slate-50 max-w-lg font-semibold text-4xl md:text-7xl">
           <h1 className="">
-            crie{" "}
+            Crie{" "}
             <span className="font-bold bg-gradient-to-r from-sky-400 to-sky-600 bg-clip-text text-transparent">
               clipes
             </span>

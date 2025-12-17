@@ -46,7 +46,7 @@ export default function Plans() {
           </div>
 
           <h2 className="text-4xl md:text-6xl font-bold mb-4 tracking-tight">
-            gere mais, <br />
+            Gere mais, <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-sky-600">
               economize mais
             </span>

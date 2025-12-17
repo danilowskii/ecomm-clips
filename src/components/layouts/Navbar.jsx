@@ -37,7 +37,7 @@ export default function Navbar() {
           <a
             target="_blank"
             href="https://plataforma.ecommclips.com"
-            className="self-center text-sm md:text-base px-4 py-2 text-nowrap rounded-xl font-semibold transition-all duration-200 bg-sky-600 hover:bg-sky-500 text-white shadow-lg shadow-sky-500/25 hover:shadow-sky-500/40"
+            className="self-center text-xs md:text-base px-3 py-3 text-nowrap rounded-xl font-semibold transition-all duration-200 bg-sky-600 hover:bg-sky-500 text-white shadow-lg shadow-sky-500/25 hover:shadow-sky-500/40"
           >
             Iniciar Sessão
           </a>

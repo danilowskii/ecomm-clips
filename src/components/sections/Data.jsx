@@ -46,7 +46,7 @@ export default function Data() {
         </div>
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4">
-            por que usar
+            Por que usar
             <br />{" "}
             <span className="bg-gradient-to-r from-sky-700 to-sky-500 bg-clip-text text-transparent">
               vídeos nos seus anúncios
@@ -78,6 +78,7 @@ export default function Data() {
                       loop
                       muted
                       playsInline
+                      preload="metadata"
                       src={item.videoSrc}
                       poster={item.videoPoster}
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
