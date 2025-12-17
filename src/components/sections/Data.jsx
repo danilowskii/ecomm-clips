@@ -78,7 +78,6 @@ export default function Data() {
                       loop
                       muted
                       playsInline
-                      preload="metadata"
                       src={item.videoSrc}
                       poster={item.videoPoster}
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
