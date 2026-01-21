@@ -2,9 +2,11 @@ import { FaWhatsapp } from "react-icons/fa";
 import { motion } from "motion/react";
 
 export default function WhatsAppButton() {
+  const waMe =
+    "https://wa.me/5511966052171?text=Olá,%20gostaria%20de%20começar%20com%20a%20Ecomm%20Clips.";
   return (
     <motion.a
-      href="https://wa.me/5581999999999?text=Olá,%20vim%20pelo%20site!"
+      href={waMe}
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 bg-green-500 rounded-full shadow-lg hover:bg-green-600 transition-colors"
