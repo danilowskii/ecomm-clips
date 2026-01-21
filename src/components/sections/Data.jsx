@@ -27,7 +27,7 @@ const benefitsData = [
   {
     title: " do Consumidor",
     titleHighlight: "Preferência",
-    stat: "Nossos vídeos são gerados automaticamente com até 15 segundos — exatamente o formato curto que a maioria dos compradores nos Marketplaces e redes sociais deseja consumir.",
+    stat: "Nossos vídeos são gerados automaticamente com no mínimo 15 segundos — exatamente o formato curto que a maioria dos compradores nos Marketplaces e redes sociais deseja consumir.",
     videoSrc: video3,
     videoPoster: posterVideo3,
     icon: DollarSign,

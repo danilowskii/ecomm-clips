@@ -12,8 +12,8 @@ export default function Hero() {
         <div className="hidden md:block animate-pulse absolute left-0 bottom-0 filter rounded-full blur-[50px] md:blur-[80px] h-40 w-40 md:h-64 md:w-64 bg-sky-600/30"></div>
       </div>
 
-      <div className="z-10 flex pt-10 px-10 flex-col md:flex-row justify-center gap-20 items-center h-full ">
-        <div className="text-slate-50 max-w-lg font-semibold text-4xl md:text-7xl">
+      <div className="z-10 flex p-10 flex-col md:flex-row justify-center gap-16 items-center h-full ">
+        <div className="text-slate-50 overflow-x-hidden max-w-lg font-semibold text-4xl md:text-[56px] xl:text-[72px] leading-tight">
           <h1 className="">
             Crie{" "}
             <span className="font-bold bg-gradient-to-r from-sky-400 to-sky-600 bg-clip-text text-transparent">
@@ -43,7 +43,20 @@ export default function Hero() {
             Gerar vídeo agora
           </button>
         </div>
-        <div className="relative rounded-3xl">
+        <div className="w-full max-w-[600px] ">
+          {" "}
+          <iframe
+            className="w-full aspect-video rounded-lg shadow-lg"
+            src="https://www.youtube-nocookie.com/embed/711-05iMpQs?si=AG5aBWUKZy26R_rX" // Domínio No-Cookie
+            title="Explicação Ecomm Clips"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+            style={{ border: 0 }}
+          ></iframe>
+        </div>
+        {/*<div className="relative rounded-3xl">
           <video
             src={videoHero}
             poster={posterVideoHero}
@@ -53,7 +66,7 @@ export default function Hero() {
             playsInline
             className="w-60 md:w-80 h-auto md:h-auto z-10 object-cover"
           ></video>
-        </div>
+        </div>*/}
       </div>
     </section>
   );
