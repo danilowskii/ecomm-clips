@@ -47,8 +47,7 @@ export default function Hero() {
           {" "}
           <iframe
             className="w-full aspect-video rounded-lg shadow-lg"
-            src="https://www.youtube-nocookie.com/embed/711-05iMpQs?si=AG5aBWUKZy26R_rX" // Domínio No-Cookie
-            title="Explicação Ecomm Clips"
+            src="https://www.youtube-nocookie.com/embed/711-05iMpQs?si=AG5aBWUKZy26R_rX&loop=1&playlist=711-05iMpQs"
             loading="lazy"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
