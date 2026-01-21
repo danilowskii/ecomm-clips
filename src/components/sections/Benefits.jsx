@@ -29,7 +29,7 @@ export default function Benefits() {
   return (
     <section
       id="conheca"
-      className="w-full overflow-hidden font-semibold bg-slate-50 p-6 md:p-12 lg:p-18 flex flex-col justify-center items-center"
+      className="w-full overflow-hidden font-semibold bg-slate-50 p-6 md:p-12 lg:p-18 flex flex-col justify-center items-center relative"
     >
       <div className="w-full max-w-7xl flex justify-center items-center flex-col md:mb-8">
         <div className="flex flex-row gap-2 items-center md:text-lg bg-slate-200 text-slate-900 py-2 px-6 rounded-full shadow-sm">
@@ -49,7 +49,8 @@ export default function Benefits() {
       </div>
 
       <div className="w-full relative max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="absolute left-0 top-1/2 md:-top-1/2 -translate-x-1/6 md:-translate-x-1/2 opacity-5 z-0">
+        {/* CORREÇÃO 1: pointer-events-none impede que a imagem bloqueie cliques */}
+        <div className="absolute left-0 top-1/2 md:-top-1/2 -translate-x-1/6 md:-translate-x-1/2 opacity-5 z-0 pointer-events-none">
           <img src={logo} alt="Logo Ecomm Clips" />
         </div>
         {benefits.map((item) => (
@@ -70,10 +71,19 @@ export default function Benefits() {
           </ScrollReveal>
         ))}
       </div>
+
       <ScrollReveal delay={0.2} duration={0.7}>
-        <button className="w-full md:w-fit px-20 py-4 mt-8 rounded-xl font-semibold transition-all duration-200 bg-sky-600 hover:bg-sky-500 text-white shadow-lg shadow-sky-500/25 hover:shadow-sky-500/40">
-          Gerar vídeo com IA
-        </button>
+        <div className="mt-8 flex justify-center w-full">
+          {" "}
+          <a
+            href="https://plataforma.ecommclips.com/auth?callbackUrl=%2F"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cursor-pointer relative z-20 inline-block w-full md:w-fit px-20 py-4 rounded-xl font-semibold transition-all duration-200 bg-sky-600 hover:bg-sky-500 text-white shadow-lg shadow-sky-500/25 hover:shadow-sky-500/40 text-center"
+          >
+            Gerar vídeo com IA
+          </a>
+        </div>
       </ScrollReveal>
     </section>
   );

@@ -39,9 +39,14 @@ export default function Hero() {
             Transforme fotos em vídeos profissionais com IA, prontos para
             anúncios e marketplaces
           </h3>
-          <button className="text-base md:text-lg px-6 md:px-10 py-4 rounded-xl font-semibold transition-all duration-200 bg-sky-600 hover:bg-sky-500 text-white shadow-lg shadow-sky-500/25 hover:shadow-sky-500/40">
-            Gerar vídeo agora
-          </button>
+          <a
+            href="https://plataforma.ecommclips.com/auth?callbackUrl=%2F"
+            target="_blank"
+          >
+            <button className="text-base md:text-lg px-6 md:px-10 py-4 rounded-xl font-semibold transition-all duration-200 bg-sky-600 hover:bg-sky-500 text-white shadow-lg shadow-sky-500/25 hover:shadow-sky-500/40">
+              Gerar vídeo agora
+            </button>
+          </a>
         </div>
         <div className="w-full max-w-[600px] ">
           {" "}
